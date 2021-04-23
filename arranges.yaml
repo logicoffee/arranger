@@ -120,37 +120,37 @@
   description: 略
 - left: 42
   aim: S10 -> D16
-  description: S6 -> D18 というルートもあるから、6 と 10 を同時狙いできる。
+  description: S6 -> D18 というルートもあるため、6 と 10 を同時狙いできます。
 - left: 43
   aim: S3 -> D20
-  description: S19 -> D12 というルートもあるから、3 と 19 を同時狙いできる。
+  description: S19 -> D12 というルートもあるため、3 と 19 を同時狙いできる。
 - left: 44
   aim: S12 -> D16
-  description: 8 と 16 を同時狙いしてもいいかも。
+  description: 8 と 16 を同時狙いしてもいいかもしれません。
 - left: 45
   aim: S13 -> D16
   description: 略
 - left: 46
   aim: S6 -> D20
-  description: S10 -> D18 というルートもあるから、6 と 10 を同時狙いできる。
+  description: S10 -> D18 というルートもあるため、6 と 10 を同時狙いできます。
 - left: 47
   aim: S7 -> D20
-  description: S19 -> D14 とうルートもあるから、7 と 19 を同時狙いできる。
+  description: S19 -> D14 とうルートもあるため、7 と 19 を同時狙いできます。
 - left: 48
   aim: S16 -> D16
-  description: S8 -> D20 というルートもあるから、8 と 16 を同時狙いできる。
+  description: S8 -> D20 というルートもあるため、8 と 16 を同時狙いできます。
 - left: 49
   aim: S17 -> D16
-  description: トリプルに入ると bust するため、S9 のほうが安全かもしれない。
+  description: トリプルに入ると bust するため、S9 のほうが安全かもしれません。
 - left: 50
   aim: S18 -> D16
-  description: トリプルに入ると bust するため、S10 のほうが安全かもしれない。
+  description: トリプルに入ると bust するため、S10 のほうが安全かもしれません。
 - left: 51
   aim: S19 -> D16
-  description: トリプルに入ると bust するため、S11 のほうが安全かもしれない。
+  description: トリプルに入ると bust するため、S11 のほうが安全かもしれません。
 - left: 52
   aim: S12 -> D20
-  description: トリプルに入ると D8 が残る。
+  description: トリプルに入ると D8 残り。
 - left: 53
   aim: S13 -> D20
   description: 略
@@ -162,7 +162,7 @@
   description: 略
 - left: 56
   aim: S16 -> D20
-  description: トリプルに入ると D4 が残る。
+  description: トリプルに入ると D4 残り。
 - left: 57
   aim: S17 -> D20
   description: 略
@@ -171,13 +171,13 @@
   description: 略
 - left: 59
   aim: S19 -> D20
-  description: トリプルに入ると bust するため、S9 のほうが安全かもしれない。
+  description: トリプルに入ると bust するため、S9 のほうが安全かもしれません。
 - left: 60
   aim: S20 -> D20
   description: 略
 - left: 61
   aim: T15 -> D8
-  description: S15 にはずしても、6 と 10 を同時狙いできる 46 が残る。
+  description: S15 にはずしても、6 と 10 を同時狙いできる 46 が残ります。
 - left: 62
   aim: T10 -> D16
   description: S10 にはずすと 52 残り。
@@ -224,7 +224,7 @@
   description: S17 にはずすと 58 残り。
 - left: 76
   aim: T20 -> D8
-  description: S20 にはずすと 56 のこり。
+  description: S20 にはずすと 56 残り。
 - left: 77
   aim: T19 -> D10
   description: S19 にはずすと 58 残り。
@@ -268,7 +268,7 @@
   aim:
     T20 -> D15
     Bull -> D20
-  description: T18 -> D18 というルートもあるが、S18 にはずすと 72 が残り、シングルでダブルが出せない。
+  description: T18 -> D18 というルートもありますが、S18 にはずすと 72 が残り、シングルでダブルが出せません。
 - left: 91
   aim: T17 -> D20
   description: S17 にはずすと 74 残り。
@@ -295,7 +295,7 @@
   description: S20 にはずすと 78 残り。
 - left: 99
   aim: T19 -> S10 -> D16
-  description: トリプル 1 本ではダブルを出せない。
+  description: トリプル 1 本ではダブルを出せません。
 - left: 100
   aim: T20 -> D20
   description: 略
