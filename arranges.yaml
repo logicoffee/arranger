@@ -536,10 +536,10 @@
 - left:
     from: 171
     to: 220
-  aim: 20
+  aim: "20"
   description: 20 から削りましょう。
 - left: 221
-  aim: 20
+  aim: "20"
   description: 20 を 3 本であがり目を残せます。
 - left: 222
   aim: S20 -> S20 -> S18
@@ -548,7 +548,7 @@
   aim: S20 -> S20 -> S19
   description: 20 キープではあがり目が残せません。
 - left: 224
-  aim: 20
+  aim: "20"
   description: 20 を 3 本であがり目を残せます。
 - left: 225
   aim:
@@ -559,7 +559,7 @@
   aim: S20 -> S20 -> S19
   description: 20 キープではあがり目が残せません。
 - left: 227
-  aim: 20
+  aim: "20"
   description: 20 を 3 本であがり目を残せます。
 - left: 228
   aim: S20 -> S20 -> S18
@@ -568,7 +568,7 @@
   aim: S20 -> S20 -> S19
   description: 20 キープではあがり目が残せません。
 - left: 230
-  aim: 20
+  aim: "20"
   description: 20 を 3 本であがり目を残せます。
 - left: 231
   aim: S20 -> S19 -> 25
@@ -588,7 +588,7 @@
 - left:
     from: 236
     to: 258
-  aim: 20
+  aim: "20"
   description: 100 点を出さなければあがり目が出ません。
 - left: 259
   aim:
@@ -598,10 +598,10 @@
     19 を 5 本
   description: 100 点削るとあがり目のない 159 が残ってしまうため、19 を使う必要があります。19 を 5 本入れるのが覚えやすいですが、164 点という難易度の高い数字が残ります。20 から狙えば 160 等のよりあがりやすい数字が残せる可能性が高くなります。
 - left: 260
-  aim: 20
+  aim: "20"
   description: 100 点削ればあがり目が残せます。
 - left: 261
-  aim: 20
+  aim: "20"
   description: 100 点削ればあがり目が残せます。
 - left: 262
   aim:
@@ -616,7 +616,7 @@
     S20 -> S19 -> T19
   description: 100 点削るとあがり目が出せないため、19 を使う必要があります。
 - left: 264
-  aim: 20
+  aim: "20"
   description: 100 点削ればあがり目が残せます。
 - left: 265
   aim: 19 を 5 本
@@ -628,7 +628,7 @@
     S20 -> S19 -> T19
   description: 100 点削るとあがり目が出せないため、19 を使う必要があります。
 - left: 267
-  aim: 20
+  aim: "20"
   description: 100 点削ればあがり目が残せます。
 - left: 268
   aim:
@@ -642,13 +642,13 @@
     S20 -> S19 -> T20
   description: 100 点削るとあがり目が出せないため、19 を使う必要があります。
 - left: 270
-  aim: 20
+  aim: "20"
   description: 100 点削ればあがり目が残せます。
 - left: 271
   aim: 19 を 4 本 -> 25
   description: 100 点では足りないため Bull を使う必要があり、数字の調整のために 19 から狙う必要があります。
 - left: 272
-  aim: 20 を 4 本 -> 25
+  aim: "20" を 4 本 -> 25
   description: 100 点では足りないため Bull を使う必要があります。
 - left: 273
   aim: T20 -> S18 -> 25
@@ -657,15 +657,15 @@
   aim: T20 -> S19 -> 25
   description: 100 点では足りないため Bull を使う必要があります。1 本目がシングルだった場合は残り 2 本ともトリプルに入れる必要があります。
 - left: 275
-  aim: 20 を 4 本 -> 25
+  aim: "20" を 4 本 -> 25
   description: 100 点では足りないため Bull を使う必要があります。
 - left:
     from: 276
     to: 300
-  aim: 20
+  aim: "20"
   description: 140 点削ればあがり目が残せます。
 - left: 301
-  aim: 20
+  aim: "20"
   description: 140 点削ればあがり目が残せます。
 - left: 302
   aim:
@@ -676,7 +676,7 @@
   aim: 19 を 7 本
   description: 140 点削るとあがり目が出せないため、19 を使う必要があります。
 - left: 304
-  aim: 20
+  aim: "20"
   description: 140 点削ればあがり目が残せます。
 - left: 305
   aim:
@@ -690,7 +690,7 @@
     S19 -> T19 -> T20
   description: 140 点削るとあがり目が出せないため、19 を使う必要があります。
 - left: 307
-  aim: 20
+  aim: "20"
   description: 140 点削ればあがり目が残せます。
 - left: 308
   aim: T20 -> T20 -> S18
@@ -701,19 +701,19 @@
     S19 -> T20 -> T20
   description: 140 点削ればあがり目が出せないため、19 を使う必要があります。T19 -> S19 となった場合はあがり目が出せません。
 - left: 310
-  aim: 20
+  aim: "20"
   description: 140 点削ればあがり目が残せます。
 - left: 311
-  aim: 20
+  aim: "20"
   description: 180 点削ればあがり目が残せます。
 - left: 312
   aim: T20 -> T20 -> 25
   description: 140 点では足りないため Bull を使うアレンジです。実践的には 180 を狙いたいですね。
 - left: 313
-  aim: 20
+  aim: "20"
   description: 180 点削ればあがり目が残せます。
 - left: 314
-  aim: 20
+  aim: "20"
   description: 180 点削ればあがり目が残せます。
 - left: 315
   aim: T20 -> T20 -> 25
