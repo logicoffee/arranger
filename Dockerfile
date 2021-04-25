@@ -111,9 +111,7 @@ RUN apt-get -yq update && apt-get -yq --no-install-suggests --no-install-recomme
     ca-certificates \
     curl \
     libgmp10 \
-    liblapack3 \
     liblzma5 \
-    libpq5 \
     libssl1.1 \
     libyaml-0-2 \
     netbase \
