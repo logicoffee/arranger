@@ -3,7 +3,7 @@ module Main where
 import           Data.String                          (fromString)
 import           Network.Wai.Handler.Warp             (run)
 import           Network.Wai.Middleware.RequestLogger (logStdout)
-import           System.Environment                   (getEnv, lookupEnv)
+import           System.Environment                   (getEnv)
 
 import           API
 

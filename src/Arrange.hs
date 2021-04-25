@@ -17,15 +17,21 @@ import           Arrange.Type
 import           Arrange.Value
 
 defaultArrange :: Arrange
-defaultArrange = Arrange 0 "" ""
+defaultArrange = Arrange (Single 0) "未対応の数字です" ""
 
-findArrange :: Int -> Arrange
+findArrange :: Int -> Either T.Text Arrange
 findArrange n
-    | n <= 0 = defaultArrange
-    | n >= 501 = defaultArrange
-    | otherwise = fromMaybe defaultArrange $ find (\a -> left a == n) arranges
+    | n <= 0 = Left "未対応の数字です"
+    | n >= 501 = Left "未対応の数字です"
+    | otherwise = Right $ fromMaybe defaultArrange $ find (matchArrange n) arranges
+
+matchArrange :: Int -> Arrange -> Bool
+matchArrange n a = case left a of
+    Single i  -> i == n
+    Range l u -> l <= n && n <= u
+
 
 parseLeft :: T.Text -> Either T.Text Int
 parseLeft m = case parseOnly decimal m of
-    Left _  -> Left "数字を入力してください"
+    Left _  -> Left "数字を入力してね"
     Right x -> Right x

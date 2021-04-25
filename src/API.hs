@@ -24,7 +24,9 @@ type API = "arranger" :> Webhook
 mkReply :: T.Text -> T.Text
 mkReply m = case parseLeft m of
     Left l  -> l
-    Right a -> aim $ findArrange a
+    Right n -> case findArrange n of
+        Left l  -> l
+        Right a -> "【ねらい】\n" <> (aim a) <> "\n\n【コメント】\n" <> (description a)
 
 handleEvent :: Event -> Line NoContent
 handleEvent EventMessage { message = W.MessageText { text }, replyToken } = replyMessage replyToken [B.MessageText (mkReply text) Nothing]
