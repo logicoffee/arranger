@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: line-bot-sdk-0.7.0@sha256:8c6572994460d6e3322306c90e28234bc24735858cda5505fb7d64904b19d754,3654
+    pantry-tree:
+      size: 787
+      sha256: 62d36f06f692d4894dd0155e549977a7857c8448fcd891f49d82b0a1ae408266
+  original:
+    hackage: line-bot-sdk-0.7.0
 snapshots:
 - completed:
     size: 567037

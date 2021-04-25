@@ -1,0 +1,720 @@
+- left: 2
+  aim: D1
+  description: Mad House とも呼ばれます。
+- left: 3
+  aim: S1 -> D1
+  description: 略
+- left: 4
+  aim: D2
+  description: 略
+- left: 5
+  aim: S1 -> D2
+  description: 略
+- left: 6
+  aim: D3
+  description: 略
+- left: 7
+  aim: S3 -> D2
+  description: 略
+- left: 8
+  aim: D4
+  description: 略
+- left: 9
+  aim: S1 -> D4
+  description: 略
+- left: 10
+  aim: D5
+  description: 略
+- left: 11
+  aim: S3 -> D4
+  description: 略
+- left: 12
+  aim: D6
+  description: 略
+- left: 13
+  aim: S5 -> D4
+  description: 略
+- left: 14
+  aim: D7
+  description: 略
+- left: 15
+  aim: S7 -> D4
+  description: 略
+- left: 16
+  aim: D8
+  description: 略
+- left: 17
+  aim: S1 -> D8
+  description: 略
+- left: 18
+  aim: D9
+  description: 略
+- left: 19
+  aim: S3 -> D8
+  description: 略
+- left: 20
+  aim: D10
+  description: 略
+- left: 21
+  aim: S5 -> D8
+  description: 略
+- left: 22
+  aim: D11
+  description: 略
+- left: 23
+  aim: S7 -> D8
+  description: 略
+- left: 24
+  aim: D12
+  description: 略
+- left: 25
+  aim: S9 -> D8
+  description: 略
+- left: 26
+  aim: D13
+  description: 略
+- left: 27
+  aim: S11 -> D8
+  description: 略
+- left: 28
+  aim: D14
+  description: 略
+- left: 29
+  aim: S13 -> D8
+  description: 略
+- left: 30
+  aim: D15
+  description: 略
+- left: 31
+  aim: S15 -> D8
+  description: 略
+- left: 32
+  aim: D16
+  description: 略
+- left: 33
+  aim: S1 -> D16
+  description: 略
+- left: 34
+  aim: D17
+  description: 略
+- left: 35
+  aim: S3 -> D16
+  description: 略
+- left: 36
+  aim: D18
+  description: 略
+- left: 37
+  aim: S5 -> D16
+  description: 略
+- left: 38
+  aim: D19
+  description: 略
+- left: 39
+  aim: S7 -> D16
+  description: 略
+- left: 40
+  aim: D20
+  description: 略
+- left: 41
+  aim: S11 -> D20
+  description: 略
+- left: 42
+  aim: S10 -> D16
+  description: S6 -> D18 というルートもあるため、6 と 10 を同時狙いできます。
+- left: 43
+  aim: S3 -> D20
+  description: S19 -> D12 というルートもあるため、3 と 19 を同時狙いできる。
+- left: 44
+  aim: S12 -> D16
+  description: 8 と 16 を同時狙いしてもいいかもしれません。
+- left: 45
+  aim: S13 -> D16
+  description: 略
+- left: 46
+  aim: S6 -> D20
+  description: S10 -> D18 というルートもあるため、6 と 10 を同時狙いできます。
+- left: 47
+  aim: S7 -> D20
+  description: S19 -> D14 とうルートもあるため、7 と 19 を同時狙いできます。
+- left: 48
+  aim: S16 -> D16
+  description: S8 -> D20 というルートもあるため、8 と 16 を同時狙いできます。
+- left: 49
+  aim: S17 -> D16
+  description: トリプルに入ると bust するため、S9 のほうが安全かもしれません。
+- left: 50
+  aim: S18 -> D16
+  description: トリプルに入ると bust するため、S10 のほうが安全かもしれません。
+- left: 51
+  aim: S19 -> D16
+  description: トリプルに入ると bust するため、S11 のほうが安全かもしれません。
+- left: 52
+  aim: S12 -> D20
+  description: トリプルに入ると D8 残り。
+- left: 53
+  aim: S13 -> D20
+  description: 略
+- left: 54
+  aim: S14 -> D20
+  description: 略
+- left: 55
+  aim: S15 -> D20
+  description: 略
+- left: 56
+  aim: S16 -> D20
+  description: トリプルに入ると D4 残り。
+- left: 57
+  aim: S17 -> D20
+  description: 略
+- left: 58
+  aim: S18 -> D20
+  description: 略
+- left: 59
+  aim: S19 -> D20
+  description: トリプルに入ると bust するため、S9 のほうが安全かもしれません。
+- left: 60
+  aim: S20 -> D20
+  description: 略
+- left: 61
+  aim: T15 -> D8
+  description: S15 にはずしても、6 と 10 を同時狙いできる 46 が残ります。
+- left: 62
+  aim: T10 -> D16
+  description: S10 にはずすと 52 残り。
+- left: 63
+  aim: T13 -> D12
+  description: S13 にはずすと 50 残り。
+- left: 64
+  aim: T16 -> D8
+  description: S16 にはずすと 48 残り。
+- left: 65
+  aim: |-
+    T11 -> D16
+    25 -> D20
+  description: S11 にはずすと 54 残り。
+- left: 66
+  aim: T14 -> D12
+  description: S14 にはずすと 52 残り。
+- left: 67
+  aim: T17 -> D8
+  description: S17 にはずすと 50 残り。
+- left: 68
+  aim: T20 -> D8
+  description: S20 にはずすと 48 残り。
+- left: 69
+  aim: T15 -> D12
+  description: S15 にはずすと 54 残り。
+- left: 70
+  aim: T18 -> D8
+  description: S18 にはずすと 52 残り。
+- left: 71
+  aim: T13 -> D16
+  description: S13 にはずすと 58 残り。
+- left: 72
+  aim: T16 -> D12
+  description: S16 にはずすと 56 残り。
+- left: 73
+  aim: T19 -> D8
+  description: S19 にはずすと 54 残り。
+- left: 74
+  aim: T14 -> D16
+  description: S14 にはずすと 60 残り。
+- left: 75
+  aim: T17 -> D12
+  description: S17 にはずすと 58 残り。
+- left: 76
+  aim: T20 -> D8
+  description: S20 にはずすと 56 残り。
+- left: 77
+  aim: T19 -> D10
+  description: S19 にはずすと 58 残り。
+- left: 78
+  aim: T18 -> D12
+  description: S18 にはずすと 60 残り。
+- left: 79
+  aim: T19 -> D11
+  description: S19 にはずすと 60 残り。
+- left: 80
+  aim: T20 -> D10
+  description: S20 にはずすと 60 残り。
+- left: 81
+  aim: T19 -> D12
+  description: S19 にはずすと 62 残り。
+- left: 82
+  aim: Bull -> D16
+  description: 25 にはずすと 57 残り。
+- left: 83
+  aim: T17 -> D16
+  description: S17 にはずすと 66 残り。
+- left: 84
+  aim: T20 -> D12
+  description: S20 にはずすと 64 残り。
+- left: 85
+  aim: T15 -> D20
+  description: S15 にはずすと 70 残り。
+- left: 86
+  aim: T18 -> D16
+  description: S18 にはずすと 68 残り。
+- left: 87
+  aim: T17 -> D18
+  description: S17 にはずすと 70 残り。
+- left: 88
+  aim: T20 -> D14
+  description: S20 にはずすと 68 残り。
+- left: 89
+  aim: T19 -> D16
+  description: S19 にはずすと 70 残り。
+- left: 90
+  aim: |-
+    T20 -> D15
+    Bull -> D20
+  description: T18 -> D18 というルートもありますが、S18 にはずすと 72 が残り、シングルでダブルが出せません。
+- left: 91
+  aim: T17 -> D20
+  description: S17 にはずすと 74 残り。
+- left: 92
+  aim: T20 -> D16
+  description: S20 にはずすと 72 残り。
+- left: 93
+  aim: T19 -> D18
+  description: S19 にはずすと 74 残り。
+- left: 94
+  aim: T18 -> D20
+  description: S18 にはずすと 76 残り。
+- left: 95
+  aim: T19 -> D19
+  description: S19 にはずすと 76 残り。
+- left: 96
+  aim: T20 -> D18
+  description: S20 にはずすと 76 残り。
+- left: 97
+  aim: T19 -> D20
+  description: S19 にはずすと 78 残り。
+- left: 98
+  aim: T20 -> D19
+  description: S20 にはずすと 78 残り。
+- left: 99
+  aim: T19 -> S10 -> D16
+  description: トリプル 1 本ではダブルを出せません。
+- left: 100
+  aim: T20 -> D20
+  description: 略
+- left: 101
+  aim: T20 -> S9 -> D16
+  description: S1 や S5 にずれてもチャンスは残ります。相手に上がり目がないのなら、S19 -> 25 -> S17 や、25 -> S20 -> S16 のように次のラウンドにダブルを残すのもありです。
+- left: 102
+  aim: T20 -> S10 -> D16
+  description: S20 にはずすと 82 が残ります。相手に上がり目があるのなら、Bull より大きい T14 を狙うのが良いでしょう。
+- left: 103
+  aim: T19 -> S6 -> D20
+  description: 左右にずれてもチャンスは残ります。S19 にはずすと 84 残り。
+- left: 104
+  aim: T19 -> S7 -> D20
+  description: T20 を狙うと、左右にずれたときに上がり目が残りません。S19 にはずすと85 残り。
+- left: 105
+  aim: T20 -> S13 -> D16
+  description: 左右にずれてもチャンスは残ります。S20 にはずすと 85 残り。
+- left: 106
+  aim: T20 -> S6 -> D20
+  description: S20 にはずすと 86 残り。
+- left: 107
+  aim: T19 -> S18 -> D16
+  description: 左右にずれてもチャンスは残ります。S19 にはずすと 88 残り。
+- left: 108
+  aim: T20 -> S16 -> D16
+  description: S20 にはずすと 88 残り。
+- left: 109
+  aim: T20 -> S17 -> D16
+  description: S20 にはずすと 89 残り。
+- left: 110
+  aim: T20 -> S18 -> D16
+  description: S20 にはずすと 90 残り。
+- left: 111
+  aim: T20 -> S19 -> D16
+  description: S20 にはずすと 91 残り。
+- left: 112
+  aim: T20 -> S12 -> D20
+  description: S20 にはずすと 92 残り。
+- left: 113
+  aim: T20 -> S13 -> D20
+  description: S20 にはずすと 93 残り。
+- left: 114
+  aim: T20 -> S14 -> D20
+  description: S20 にはずすと 94 残り。
+- left: 115
+  aim: T19 -> S18 -> D20
+  description: S19 にはずすと 96 残り。
+- left: 116
+  aim: T20 -> S16 -> D20
+  description: S20 にはずすと 96 残り。
+- left: 117
+  aim: T20 -> S17 -> D20
+  description: S20 にはずすと 97 残り。
+- left: 118
+  aim: T20 -> S18 -> D20
+  description: 18 から狙いたくなりますが、T18 に入った場合 64 が残りシングルでは Bull 以外のダブルが出せません。S20 にはずすと 98 残り。
+- left: 119
+  aim: T19 -> T12 -> D13
+  description: T20 狙ってシングルに外すと 99 が残り、2 本であがれません。をS19 にはずすと 100 残り。
+- left: 120
+  aim: T20 -> S20 -> D20
+  description: S20 にはずすと 100 残り。
+- left: 121
+  aim: |-
+    T20 -> T11 -> D14
+    S20 -> T17 -> Bull
+  description: シングルにはずれてもいいように 20 から狙います。
+- left: 122
+  aim: |-
+    T18 -> T18 -> D7
+    S18 -> T18 -> Bull
+  description: シングルにはずれてもいいように 18 から狙います。
+- left: 123
+  aim: |-
+    T19 -> T16 -> D9
+    S19 -> T18 -> bull
+  description: シングルにはずれてもいいように 19 から狙います。
+- left: 124
+  aim: |-
+    T20 -> T14 -> D11
+    S20 -> T18 -> Bull
+  description: シングルにはずれてもいいように 20 から狙います。
+- left: 125
+  aim: |-
+    Bull -> 25 -> Bull
+    25 -> T20 -> D20
+  description: 1 本持ちでも Bull を狙うことがよくあります。
+- left: 126
+  aim: |-
+    T19 -> T19 -> D6
+    S19 -> T19 -> Bull
+  description: シングルにはずれてもいいように 20 から狙います。
+- left: 127
+  aim: |-
+    T20 -> T17 -> D8
+    S20 -> T19 -> Bull
+  description: シングルにはずれてもいいように 20 から狙います。
+- left: 128
+  aim: |-
+    T18 -> T18 -> D10
+    S18 -> T20 -> Bull
+  description: シングルにはずれてもいいように 18 から狙います。1 本目に T18 に入った場合 74 が残ります。T14 -> D16 でもいいですが、1 本目と同じ場所を狙うほうがダブルを残せる可能性が高いため、T18 -> D10 としています。
+- left: 129
+  aim: |-
+    T19 -> T16 -> D12
+    S19 -> T20 -> Bull
+  description: シングルにはずれてもいいように 20 から狙います。
+- left: 130
+  aim: |-
+    T20 -> T20 -> D5
+    S20 -> T20 -> Bull
+  description: シングルにはずれてもいいように 20 から狙います。
+- left: 131
+  aim: T20 -> T13 -> D16
+  description: 略
+- left: 132
+  aim: |-
+    Bull -> Bull -> D16
+    25 -> T19 -> Bull
+  description: 略
+- left: 133
+  aim: T20 -> T19 -> D8
+  description: 略
+- left: 134
+  aim: T20 -> T14 -> D16
+  description: 略
+- left: 135
+  aim: |-
+    Bull -> T15 -> D20
+    25 -> T20 -> Bull
+  description: チャンスが増えるように Bull から狙います。
+- left: 136
+  aim: T20 -> T20 -> D8
+  description: 略
+- left: 137
+  aim: T20 -> T19 -> D10
+  description: 略
+- left: 138
+  aim: T20 -> T18 -> D12
+  description: 略
+- left: 139
+  aim: T19 -> T14 -> D20
+  description: 略
+- left: 140
+  aim: T20 -> T20 -> D10
+  description: まずは 20 から削りましょう。
+- left: 141
+  aim: T20 -> T19 -> D12
+  description: まずは 20 から削りましょう。
+- left: 142
+  aim: T20 -> T14 -> D20
+  description: まずは 20 から削りましょう。
+- left: 143
+  aim: T20 -> T17 -> D16
+  description: まずは 20 から削りましょう。
+- left: 144
+  aim: T20 -> T20 -> D12
+  description: まずは 20 から削りましょう。
+- left: 145
+  aim: T20 -> T15 -> D20
+  description: まずは 20 から削りましょう。
+- left: 146
+  aim: T20 -> T18 -> D16
+  description: まずは 20 から削りましょう。
+- left: 147
+  aim: T20 -> T17 -> D18
+  description: まずは 20 から削りましょう。
+- left: 148
+  aim: T20 -> T20 -> D14
+  description: まずは 20 から削りましょう。
+- left: 149
+  aim: T20 -> T19 -> D16
+  description: まずは 20 から削りましょう。
+- left: 150
+  aim: T20 -> T18 -> D18
+  description: まずは 20 から削りましょう。
+- left: 151
+  aim: T20 -> T19 -> D20
+  description: まずは 20 から削りましょう。
+- left: 152
+  aim: T20 -> T20 -> D16
+  description: まずは 20 から削りましょう。
+- left: 153
+  aim: T20 -> T19 -> D18
+  description: まずは 20 から削りましょう。
+- left: 154
+  aim: T20 -> T18 -> D20
+  description: まずは 20 から削りましょう。
+- left: 155
+  aim: T20 -> T19 -> D19
+  description: まずは 20 から削りましょう。
+- left: 156
+  aim: T20 -> T20 -> D18
+  description: まずは 20 から削りましょう。
+- left: 157
+  aim: T20 -> T19 -> D20
+  description: まずは 20 から削りましょう。
+- left: 158
+  aim: T20 -> T20 -> D19
+  description: まずは 20 から削りましょう。
+- left: 159
+  aim: 3 本ではあがれません。
+  description: 3 本ではあがれません。
+- left: 160
+  aim: T20 -> T20 -> D20
+  description: まずは 20 から削りましょう。
+- left: 161
+  aim: T20 -> T17 -> Bull
+  description: 略
+- left: 162
+  aim: 3 本ではあがれません。
+  description: 3 本ではあがれません。
+- left: 163
+  aim: 3 本ではあがれません。
+  description: 3 本ではあがれません。
+- left: 164
+  aim: T20 -> T18 -> Bull
+  description: 略
+- left: 165
+  aim: 3 本ではあがれません。
+  description: 3 本ではあがれません。
+- left: 166
+  aim: 3 本ではあがれません。
+  description: 3 本ではあがれません。
+- left: 167
+  aim: T20 -> T19 -> Bull
+  description: 略
+- left: 168
+  aim: 3 本ではあがれません。
+  description: 3 本ではあがれません。
+- left: 169
+  aim: 3 本ではあがれません。
+  description: 3 本ではあがれません。
+- left: 170
+  aim: T20 -> T20 -> Bull
+  description: 略
+- left:
+    from: 171
+    to: 220
+  aim: "20"
+  description: 20 から削りましょう。
+- left: 221
+  aim: "20"
+  description: 20 を 3 本であがり目を残せます。
+- left: 222
+  aim: S20 -> S20 -> S18
+  description: 20 キープではあがり目が残せません。
+- left: 223
+  aim: S20 -> S20 -> S19
+  description: 20 キープではあがり目が残せません。
+- left: 224
+  aim: "20"
+  description: 20 を 3 本であがり目を残せます。
+- left: 225
+  aim: |-
+    S20 -> S20 -> S18
+    S20 -> S20 -> 25
+  description: 20 キープではあがり目が残せません。
+- left: 226
+  aim: S20 -> S20 -> S19
+  description: 20 キープではあがり目が残せません。
+- left: 227
+  aim: "20"
+  description: 20 を 3 本であがり目を残せます。
+- left: 228
+  aim: S20 -> S20 -> S18
+  description: 20 キープではあがり目が残せません。
+- left: 229
+  aim: S20 -> S20 -> S19
+  description: 20 キープではあがり目が残せません。
+- left: 230
+  aim: "20"
+  description: 20 を 3 本であがり目を残せます。
+- left: 231
+  aim: S20 -> S19 -> 25
+  description: シングル 3 本ではあがり目が出せないためBull を使う必要があり、そのために 19 にスイッチする必要があります。1 本目にトリプルに入った場合は 19 にスイッチする必要はありません。
+- left: 232
+  aim: S20 -> S20 -> 25
+  description: シングル 3 本ではあがり目が出せないため Bull を使う必要があります。
+- left: 233
+  aim: S20 -> S18 -> 25
+  description: シングル 3 本ではあがり目が出せないため Bull を使う必要があり、そのために 18 にスイッチする必要があります。1 本目にトリプルに入った場合は 18 にスイッチする必要はありません。
+- left: 234
+  aim: S20 -> S19 -> 25
+  description: シングル 3 本ではあがり目が出せないためBull を使う必要があり、そのために 19 にスイッチする必要があります。1 本目にトリプルに入った場合は 19 にスイッチする必要はありません。
+- left: 235
+  aim: S20 -> S25 -> 25
+  description: シングル 3 本ではあがり目が出せないため Bull を使う必要があります。
+- left:
+    from: 236
+    to: 258
+  aim: "20"
+  description: 100 点を出さなければあがり目が出ません。
+- left: 259
+  aim: |-
+    T20 -> S20 -> S19
+    S20 -> S19 -> T20
+    S20 -> T19 -> S18
+    19 を 5 本
+  description: 100 点削るとあがり目のない 159 が残ってしまうため、19 を使う必要があります。19 を 5 本入れるのが覚えやすいですが、164 点という難易度の高い数字が残ります。20 から狙えば 160 等のよりあがりやすい数字が残せる可能性が高くなります。
+- left: 260
+  aim: "20"
+  description: 100 点削ればあがり目が残せます。
+- left: 261
+  aim: "20"
+  description: 100 点削ればあがり目が残せます。
+- left: 262
+  aim: |-
+    T20 -> S20 -> S18
+    S20 -> T18 -> S18
+    S20 -> S18 -> T18
+  description: 100 点削るとあがり目が出せないため、18 を使う必要があります。
+- left: 263
+  aim: |-
+    T20 -> S20 -> S19
+    S20 -> T19 -> S19
+    S20 -> S19 -> T19
+  description: 100 点削るとあがり目が出せないため、19 を使う必要があります。
+- left: 264
+  aim: "20"
+  description: 100 点削ればあがり目が残せます。
+- left: 265
+  aim: 19 を 5 本
+  description: 100 点削るとあがり目が出せないため、19 を使う必要があります。
+- left: 266
+  aim: |-
+    T20 -> S20 -> S19
+    S20 -> T19 -> S19
+    S20 -> S19 -> T19
+  description: 100 点削るとあがり目が出せないため、19 を使う必要があります。
+- left: 267
+  aim: "20"
+  description: 100 点削ればあがり目が残せます。
+- left: 268
+  aim: |-
+    S19 -> S19 -> T20
+    S19 -> T19 -> 25
+  description: 100 点削るとあがり目が出せないため、19 を使う必要があります。S20 -> S18 -> T20 でも良さそうですが、2 本目がトリプルに入ると 194 残りとなり、もう 1 本トリプルが必要になってしまいます。
+- left: 269
+  aim: |-
+    T20 -> S20 -> S19
+    S20 -> T19 -> 25
+    S20 -> S19 -> T20
+  description: 100 点削るとあがり目が出せないため、19 を使う必要があります。
+- left: 270
+  aim: "20"
+  description: 100 点削ればあがり目が残せます。
+- left: 271
+  aim: 19 を 4 本 -> 25
+  description: 100 点では足りないため Bull を使う必要があり、数字の調整のために 19 から狙う必要があります。
+- left: 272
+  aim: 20 を 4 本 -> 25
+  description: 100 点では足りないため Bull を使う必要があります。
+- left: 273
+  aim: T20 -> S18 -> 25
+  description: 100 点では足りないため Bull を使う必要があります。1 本目がシングルだった場合は残り 2 本ともトリプルに入れる必要があります。
+- left: 274
+  aim: T20 -> S19 -> 25
+  description: 100 点では足りないため Bull を使う必要があります。1 本目がシングルだった場合は残り 2 本ともトリプルに入れる必要があります。
+- left: 275
+  aim: 20 を 4 本 -> 25
+  description: 100 点では足りないため Bull を使う必要があります。
+- left:
+    from: 276
+    to: 300
+  aim: "20"
+  description: 140 点削ればあがり目が残せます。
+- left: 301
+  aim: "20"
+  description: 140 点削ればあがり目が残せます。
+- left: 302
+  aim: |-
+    T20 -> T18 -> S18
+    T20 -> S18 -> T18
+  description: 140 点削るとあがり目が出せないため、18 を使う必要があります。1 本目がシングルだった場合はあがり目が出せません。シングルにはずしてもいいように 1 本目から 18 を狙うことも考えられますが、T18 に入ると残りが 248 点となります。2 本目以降を S18 -> T20 とすればあがり目が出せますが、2 本目が T18 に入ってしまうと 194 残りとなります。したがって 3 本ともトリプルに入れなければあがり目が出せなくなってしまいます。トリプルに入れることでむしろ損するわけです。トリプルに入ると損してしまうようなルートは取りたくないので、1 本目は 20 が良いです。
+- left: 303
+  aim: 19 を 7 本
+  description: 140 点削るとあがり目が出せないため、19 を使う必要があります。
+- left: 304
+  aim: "20"
+  description: 140 点削ればあがり目が残せます。
+- left: 305
+  aim: |-
+    T20 -> 25 -> T20
+    T20 -> Bull -> 25
+  description: 140 点削るとあがり目が出せないため、Bull を使う必要があります。1 本目をシングルにはずすとあがり目が出せません。
+- left: 306
+  aim: |-
+    T19 -> T19 -> 25
+    T19 -> S19 -> T20
+    S19 -> T19 -> T20
+  description: 140 点削るとあがり目が出せないため、19 を使う必要があります。
+- left: 307
+  aim: "20"
+  description: 140 点削ればあがり目が残せます。
+- left: 308
+  aim: T20 -> T20 -> S18
+  description: 140 点削ればあがり目が出せないため、18 を使う必要があります。1 本目をシングルにはずすとあがり目が出せません。シングルにはずしてもいいように 1 本目から 18 を狙うことも考えられますが、T18 に入ると 254 が残り、あがり目を残すにはトリプルが 2 本必要になってしまいます。18 から狙った場合トリプルに入ると損をしてしまうため、20 から狙うのが良いです。
+- left: 309
+  aim: |-
+    T19 -> T19 -> 25
+    S19 -> T20 -> T20
+  description: 140 点削ればあがり目が出せないため、19 を使う必要があります。T19 -> S19 となった場合はあがり目が出せません。
+- left: 310
+  aim: "20"
+  description: 140 点削ればあがり目が残せます。
+- left: 311
+  aim: "20"
+  description: 180 点削ればあがり目が残せます。
+- left: 312
+  aim: T20 -> T20 -> 25
+  description: 140 点では足りないため Bull を使うアレンジです。実践的には 180 を狙いたいですね。
+- left: 313
+  aim: "20"
+  description: 180 点削ればあがり目が残せます。
+- left: 314
+  aim: "20"
+  description: 180 点削ればあがり目が残せます。
+- left: 315
+  aim: T20 -> T20 -> 25
+  description: 140 点では足りないため Bull を使うアレンジです。実践的には 180 を狙いたいですね。
