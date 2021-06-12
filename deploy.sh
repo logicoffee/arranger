@@ -8,5 +8,5 @@ case $1 in
     "push" ) docker push $image_name ;;
     "deploy" )
         secrets=($(gcloud --project darts-line-bots secrets versions access latest --secret arranger))
-        gcloud --project darts-line-bots run deploy arranger --image $image_name:$version --set-env-vars $(IFS=","; echo "${secrets[*]}") --platform managed --region asia-northeast1 --port 8000 --cpu 1 --memory 128 --allow-unauthenticated ;;
+        gcloud --project darts-line-bots run deploy arranger --image $image_name --set-env-vars $(IFS=","; echo "${secrets[*]}") --platform managed --region asia-northeast1 --port 8000 --cpu 1 --memory 128 --allow-unauthenticated ;;
 esac
