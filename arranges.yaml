@@ -661,7 +661,15 @@
   description: 100 点では足りないため Bull を使う必要があります。
 - left:
     from: 276
-    to: 300
+    to: 298
+  aim: "20"
+  description: 140 点削ればあがり目が残せます。
+- left: 299
+  aim: |-
+    T19 -> 18 を 4 本
+    S19 -> 20 を 4 本
+  description: 140 点削るとあがり目が出せないため、19 を使う必要があります。
+- left: 300
   aim: "20"
   description: 140 点削ればあがり目が残せます。
 - left: 301
