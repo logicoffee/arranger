@@ -26,7 +26,7 @@ mkReply m = case parseLeft m of
     Left l  -> l
     Right n -> case findArrange n of
         Left l  -> l
-        Right a -> "【ねらい】\n" <> (aim a) <> "\n\n【コメント】\n" <> (description a)
+        Right a -> "【ねらい(3本持ち)】\n" <> (aim a) <> "\n\n【コメント】\n" <> (description a)
 
 handleEvent :: Event -> Line NoContent
 handleEvent EventMessage { message = W.MessageText { text }, replyToken } = replyMessage replyToken [B.MessageText (mkReply text) Nothing]
