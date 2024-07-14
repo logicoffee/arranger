@@ -37,8 +37,10 @@ arrangeServer :: Server' ArrangeAPI
 arrangeServer signature reqBody (Events events) = do
   accessToken <- asks channelAccessToken
   env <- asks clientEnv
-  when (verifySignature accessToken reqBody signature) $
-    forM_ events (\event -> liftIO $ runClientM (replyClient accessToken (eventToReply event)) env)
+  liftIO $
+    if verifySignature accessToken reqBody signature
+      then forM_ events (\event -> runClientM (replyClient accessToken (eventToReply event)) env)
+      else print "failed to verify signature"
   return NoContent
 
 verifySignature :: ChannelAccessToken -> Text -> Text -> Bool

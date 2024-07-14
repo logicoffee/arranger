@@ -20,6 +20,7 @@
           servant-client-core
           servant-server
           text
+          wai-logger
         ]));
       in
         {
