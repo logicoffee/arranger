@@ -1,49 +1,45 @@
-{-# LANGUAGE DataKinds                #-}
-{-# LANGUAGE DisambiguateRecordFields #-}
-{-# LANGUAGE NamedFieldPuns           #-}
-{-# LANGUAGE OverloadedStrings        #-}
-{-# LANGUAGE TypeOperators            #-}
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE ExistentialQuantification #-}
+{-# LANGUAGE GADTs #-}
+{-# LANGUAGE OverloadedStrings #-}
 
 module API where
 
-import           Control.Monad          (forM_)
-import           Control.Monad.IO.Class (liftIO)
-import           Control.Monad.Reader   (ReaderT, ask, runReaderT)
-import qualified Data.Text              as T
-import           Line.Bot.Client
-import           Line.Bot.Types         as B
-import           Line.Bot.Webhook       as W
-import           Servant
+import Client
+import Control.Monad (forM_, when)
+import Control.Monad.IO.Class (liftIO)
+import Control.Monad.Trans.Reader (ReaderT, asks)
+import Crypto.Hash.SHA256
+import Data.Aeson
+import Data.Text
+import Data.Text.Encoding (decodeUtf8, encodeUtf8)
+import Message
+import Network.Wai.Handler.Warp
+import Servant
+import Servant.API
+import Servant.Client
+import Types
 
-import           Arrange
+type AppM = ReaderT State Handler
 
-type WebM = ReaderT ChannelToken Handler
+type Server' a = ServerT a AppM
 
-type API = "arranger" :> Webhook
+type HealthzAPI = Get '[PlainText] Text
 
-mkReply :: T.Text -> T.Text
-mkReply m = case parseLeft m of
-    Left l  -> l
-    Right n -> case findArrange n of
-        Left l  -> l
-        Right a -> "【ねらい(3本持ち)】\n" <> (aim a) <> "\n\n【コメント】\n" <> (description a)
+type ArrangeAPI = Header' '[Required, Strict] "X-Line-Signature" Text :> ReqBody '[JSON] Text :> ReqBody '[JSON] Events :> PostNoContent
 
-handleEvent :: Event -> Line NoContent
-handleEvent EventMessage { message = W.MessageText { text }, replyToken } = replyMessage replyToken [B.MessageText (mkReply text) Nothing]
-handleEvent _ = return NoContent
+type API = HealthzAPI :<|> ArrangeAPI
 
-handleEvents :: [Event] -> WebM NoContent
-handleEvents events = do
-    token <- ask
-    _     <- liftIO $ forM_ events $ flip runLine token . handleEvent
-    return NoContent
+healthzServer :: Server' HealthzAPI
+healthzServer = return "healthz"
 
-server :: ServerT API WebM
-server = handleEvents . events
+arrangeServer :: Server' ArrangeAPI
+arrangeServer signature reqBody (Events events) = do
+  accessToken <- asks channelAccessToken
+  env <- asks clientEnv
+  when (verifySignature accessToken reqBody signature) $
+    forM_ events (\event -> liftIO $ runClientM (replyClient accessToken (eventToReply event)) env)
+  return NoContent
 
-app :: ChannelToken -> ChannelSecret -> Application
-app token secret = serveWithContext api context server_ where
-    api = Proxy :: Proxy API
-    pc = Proxy :: Proxy '[ChannelSecret]
-    server_ = hoistServerWithContext api pc (`runReaderT` token) server
-    context = secret :. EmptyContext
+verifySignature :: ChannelAccessToken -> Text -> Text -> Bool
+verifySignature token reqBody signature = hmac (encodeUtf8 token) (encodeUtf8 reqBody) == encodeUtf8 signature
