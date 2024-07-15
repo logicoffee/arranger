@@ -7,12 +7,13 @@ import Arrange
 import Data.Aeson
 import Data.Text
 
-newtype Events = Events [TextMessageEvent]
+newtype Events = Events [TextMessageEvent] deriving (Show)
 
 data TextMessageEvent = TextMessageEvent
   { replyToken :: Text,
     message :: Text
   }
+  deriving (Show)
 
 data TextMessageReply = TextMessageReply
   { replyToken :: Text,
@@ -44,6 +45,6 @@ instance FromJSON TextMessageEvent where
 instance ToJSON TextMessageReply where
   toJSON (TextMessageReply replyToken messages) =
     object
-      [ "replytoken" .= replyToken,
+      [ "replyToken" .= replyToken,
         "messages" .= Prelude.map (\m -> object ["type" .= ("text" :: Text), "text" .= m]) messages
       ]
