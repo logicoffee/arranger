@@ -1,5 +1,2 @@
-.stack-work/
-*~
-
-.tmp/*
-!.tmp/.gitkeep
+.env
+result
