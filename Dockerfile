@@ -12,7 +12,11 @@ RUN mkdir /tmp/nix-store
 RUN cp -R $(nix-store -qR result/) /tmp/nix-store
 
 
-FROM scratch
+FROM ubuntu:24.10
+
+RUN apt-get -yq update && \
+    apt-get -yq --no-install-suggests --no-install-recommends install \
+    ca-certificates
 
 WORKDIR /app
 
