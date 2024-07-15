@@ -1,0 +1,10 @@
+.direnv
+.dockerignore
+.env.template
+.gitignore
+Dockerfile
+README.md
+docker-compose.yml
+example.ipeg
+pr.png
+result
