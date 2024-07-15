@@ -1,0 +1,9 @@
+.direnv
+result
+.dockerignore
+.env.template
+.gitignore
+docker-compose.yml
+Dockerfile
+pr.png
+README.md
