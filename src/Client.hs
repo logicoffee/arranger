@@ -12,6 +12,11 @@ import Servant.API
 import Servant.Client
 import Types
 
+reply :: ChannelAccessToken -> TextMessageReply -> IO (Either ClientError NoContent)
+reply accessToken message = do
+  env <- getClientEnv
+  runClientM (replyClient accessToken message) env
+
 type ReplyAPI =
   "v2"
     :> "bot"

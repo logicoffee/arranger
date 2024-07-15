@@ -8,26 +8,21 @@
 module API where
 
 import Client
-import Control.Monad (forM_, when)
+import Control.Monad (forM_)
 import Control.Monad.IO.Class (liftIO)
 import Control.Monad.Trans.Reader (ReaderT, asks)
 import Crypto.Hash.SHA256 (hmaclazy)
-import Data.Aeson
 import Data.ByteString qualified as B
 import Data.ByteString.Lazy qualified as BL
 import Data.Kind (Type)
 import Data.Maybe (fromMaybe)
 import Data.String.Conversions (cs)
 import Data.Text
-import Data.Text.Encoding (decodeUtf8, encodeUtf8)
 import Message
 import Network.HTTP.Types (HeaderName, hContentType)
 import Network.Wai (lazyRequestBody, requestHeaders)
-import Network.Wai.Handler.Warp
 import Servant
-import Servant.API
 import Servant.API.ContentTypes
-import Servant.Client
 import Servant.Server.Internal
 import Types
 import "base64-bytestring" Data.ByteString.Base64 (decodeLenient)
@@ -48,9 +43,7 @@ healthzServer = return "healthz"
 arrangeServer :: Server' ArrangeAPI
 arrangeServer (Events events) = do
   accessToken <- asks channelAccessToken
-  env <- asks clientEnv
-  liftIO $ print events
-  liftIO $ forM_ events (\event -> runClientM (replyClient accessToken (eventToReply event)) env)
+  liftIO $ forM_ events (reply accessToken . eventToReply)
   return NoContent
 
 data ReqBodyWithSignature (contentTypes :: [Type]) (a :: Type)

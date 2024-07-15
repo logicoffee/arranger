@@ -2,28 +2,30 @@
 
 module Types where
 
-import Data.Aeson
-import Data.ByteString
-import Data.Text
+import Data.ByteString.Char8 as B
+import Data.Text as T
 import Data.Text.Encoding (encodeUtf8)
+import System.Environment (getEnv)
 import Servant.API
-import Servant.Client
 
 data State = State
   { channelAccessToken :: ChannelAccessToken,
-    channelSecret :: ChannelSecret,
-    clientEnv :: ClientEnv
+    channelSecret :: ChannelSecret
   }
 
-type ChannelSecret = ByteString
+initState :: IO State
+initState = State <$> getChannelAccessToken <*> getChannelSecret
 
 newtype ChannelAccessToken = ChannelAccessToken Text
+
+type ChannelSecret = ByteString
 
 instance ToHttpApiData ChannelAccessToken where
   toHeader (ChannelAccessToken t) = encodeUtf8 $ "Bearer " <> t
   toQueryParam (ChannelAccessToken t) = t
 
-newtype RawRequestBody = RawRequestBody ByteString
+getChannelAccessToken :: IO ChannelAccessToken
+getChannelAccessToken = ChannelAccessToken . T.pack <$> getEnv "CHANNEL_ACCESS_TOKEN"
 
-instance FromJSON RawRequestBody where
-  parseJSON v = return $ RawRequestBody $ toStrict $ encode v
+getChannelSecret :: IO ChannelSecret
+getChannelSecret = B.pack <$> getEnv "CHANNEL_SECRET"
